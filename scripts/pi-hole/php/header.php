@@ -255,9 +255,9 @@ if($auth) {
         <!-- Logo -->
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">P<strong>h</strong></span>
+            <span class="logo-mini">S<strong>L</strong></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Pi-<strong>hole</strong></span>
+            <span class="logo-lg">Safe<strong>lock</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -271,8 +271,8 @@ if($auth) {
                 <ul class="nav navbar-nav">
                     <li<?php echo !$hostname ? ' class="hidden"' : "" ?>>
                         <p class="navbar-text">
-                            <span class="hidden-xs hidden-sm">hostname:</span>
-                            <code><?php echo $hostname; ?></code>
+                            <span class="hidden-xs hidden-sm">hostname: Safelock</span>
+                            <!-- <code> </code> -->
                         </p>
                     </li>
                     <li class="dropdown user user-menu">
