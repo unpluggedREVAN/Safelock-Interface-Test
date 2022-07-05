@@ -65,7 +65,7 @@
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i>OpenLock</a></strong> Power by OpenLock.
+                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i>Visit Us. </a></strong> Powered by OpenLock.
             </div>
         </div>
 
@@ -74,9 +74,9 @@
                 <?php if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?>
                 <ul class="list-unstyled">
                     <?php if($dockerTag) { ?> <li><strong>Docker Tag</strong> <?php echo $dockerTag; ?></li> <?php } ?>
-                    <li><strong>SafeLock V1</strong> </li>
-                    <li><strong>Firewall</strong></li>
-                    <li><strong>Web Interface V1</strong></li>
+                    <li><strong>SafeLock v.1.0</strong> </li>
+                    <li><strong>Firewall and Ad Blocker</strong></li>
+                    <li><strong>Web Interface v.1.0</strong></li>
                 </ul>
              </div>
         </div>
