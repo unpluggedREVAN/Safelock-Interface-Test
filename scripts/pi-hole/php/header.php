@@ -255,9 +255,9 @@ if($auth) {
         <!-- Logo -->
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><strong>SL</strong></span>
+            <span class="logo-mini">S<strong>L</strong></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><strong>SafeLock</strong></span>
+            <span class="logo-lg">Safe<strong>lock</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -271,21 +271,22 @@ if($auth) {
                 <ul class="nav navbar-nav">
                     <li<?php echo !$hostname ? ' class="hidden"' : "" ?>>
                         <p class="navbar-text">
-                            <span class="hidden-xs hidden-sm">hostname: safelock</span>
+                            <span class="hidden-xs hidden-sm">hostname: Safelock</span>
                             <!-- <code> </code> -->
                         </p>
                     </li>
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                            <img src="img/logo.svg" class="user-image" alt="SafeLock logo" style="border-radius: 0" width="25" height="25">
-                            <span class="hidden-xs">SafeLock</span>
+                            <img src="img/logo.svg" class="user-image" alt="Pi-hole logo" style="border-radius: 0" width="25" height="25">
+                            <span class="hidden-xs">Safelock</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="img/logo.svg" alt="SafeLock Logo" style="border: 0" width="90" height="90">
+                                <img src="img/logo.svg" alt="Pi-hole Logo" style="border: 0" width="90" height="90">
                                 <p>
                                     Open Source Ad Blocker
+                                    <small>Designed For Raspberry Pi</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->
