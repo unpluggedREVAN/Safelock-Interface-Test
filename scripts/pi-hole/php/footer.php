@@ -65,7 +65,7 @@
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i>Visit Us. </a></strong> Powered by OpenLock.
+                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Visis Us.</a></strong> Powered by OpenLock.
             </div>
         </div>
 
@@ -74,11 +74,43 @@
                 <?php if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?>
                 <ul class="list-unstyled">
                     <?php if($dockerTag) { ?> <li><strong>Docker Tag</strong> <?php echo $dockerTag; ?></li> <?php } ?>
-                    <li><strong>SafeLock v.1.0</strong> </li>
-                    <li><strong>Firewall and Ad Blocker</strong></li>
-                    <li><strong>Web Interface v.1.0</strong></li>
+                    <li><strong>SafeLock v.1.0</strong></li>
+                    <li><strong>FireWall and Ad Blocker</strong> </li>
+                    <li><strong>Web Interface v.1.0</strong> </li>
                 </ul>
-             </div>
+                <?php } else { ?>
+                <ul class="list-inline">
+                    <?php if($dockerTag) { ?>
+                    <li>
+                        <strong>Docker Tag</strong>
+                        <a href="<?php echo $dockerReleasesUrl . "/" . $dockerTag; ?>" rel="noopener" target="_blank"><?php echo $dockerTag; ?></a>
+                    </li>
+                    <?php } ?>
+                    <li>
+                        <strong>Pi-hole</strong>
+                        <a href="<?php echo $coreReleasesUrl . "/" . $core_current; ?>" rel="noopener" target="_blank"><?php echo $core_current; ?></a>
+                        <?php if ($core_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $coreReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
+                    </li>
+                    <li>
+                        <strong>FTL</strong>
+                        <a href="<?php echo $ftlReleasesUrl . "/" . $FTL_current; ?>" rel="noopener" target="_blank"><?php echo $FTL_current; ?></a>
+                        <?php if ($FTL_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $ftlReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
+                    </li>
+                    <li>
+                        <strong>Web Interface</strong>
+                        <a href="<?php echo $webReleasesUrl . "/" . $web_current; ?>" rel="noopener" target="_blank"><?php echo $web_current; ?></a>
+                        <?php if ($web_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $webReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
+                    </li>
+                </ul>
+                <?php if($core_update || $web_update || $FTL_update) { ?>
+                <?php if($dockerTag) { ?>
+                    <p>To install updates, <a href="https://github.com/pi-hole/docker-pi-hole#upgrading--reconfiguring" rel="noopener" target="_blank">replace this old container with a fresh upgraded image</a>.</p>
+                <?php } else { ?>
+                    <p>To install updates, run <code><a href="https://docs.pi-hole.net/main/update/" rel="noopener" target="_blank">pihole -up</a></code>.</p>
+                <?php } ?>
+                <?php } ?>
+                <?php } ?>
+            </div>
         </div>
     </footer>
 
