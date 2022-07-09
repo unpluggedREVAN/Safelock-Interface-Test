@@ -292,7 +292,7 @@ if($auth) {
                             <li class="user-body">
                                 <div class="row">
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://www.facebook.com/OpenLock20" rel="noopener" target="_blank">FaceBook</a>
+                                        <a class="btn-link" href="https://www.facebook.com/OpenLock20" rel="noopener" target="_blank">Facebook</a>
                                     </div>
                                     <div class="col-xs-4 text-center">
                                         <a class="btn-link" href="https://www.instagram.com/openlock20/" rel="noopener" target="_blank">Instagram</a>
