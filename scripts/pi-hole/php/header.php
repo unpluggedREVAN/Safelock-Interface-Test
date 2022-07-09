@@ -174,7 +174,7 @@
     <meta http-equiv="cache-control" content="max-age=60,private">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenLock - <?php echo $hostname ? " - " . $hostname : "" ?></title>
+    <title>OpenLock <?php echo $hostname ? " - " . $hostname : "" ?></title>
 
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -292,13 +292,13 @@ if($auth) {
                             <li class="user-body">
                                 <div class="row">
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://github.com/pi-hole" rel="noopener" target="_blank">GitHub</a>
+                                        <a class="btn-link" href="https://www.facebook.com/OpenLock20" rel="noopener" target="_blank">FaceBook</a>
                                     </div>
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://pi-hole.net/" rel="noopener" target="_blank">Website</a>
+                                        <a class="btn-link" href="https://www.instagram.com/openlock20/" rel="noopener" target="_blank">Instagram</a>
                                     </div>
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://github.com/pi-hole/pi-hole/releases" rel="noopener" target="_blank">Updates</a>
+                                        <a class="btn-link" href="https://twitter.com/OpenLock20" rel="noopener" target="_blank">Twitter</a>
                                     </div>
                                     <div id="sessiontimer" class="col-xs-12 text-center">
                                         <strong>Session is valid for <span id="sessiontimercounter"><?php if($auth && strlen($pwhash) > 0){echo $maxlifetime;}else{echo "0";} ?></span></strong>
@@ -309,8 +309,8 @@ if($auth) {
                             <li class="user-footer">
                                 <!-- Donate Button -->
                                 <div class="text-center">
-                                    <a class="btn btn-primary btn-lg donate" href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
-                                        <i class="fas fa-fw menu-icon fa-donate"></i> Donate
+                                    <a class="btn btn-primary btn-lg donate" href="https://openlocksecurity.com/" rel="noopener" target="_blank">
+                                        <i class="fas fa-fw menu-icon fa-donate"></i> Visit Our Website
                                     </a>
                                 </div>
                             </li>
