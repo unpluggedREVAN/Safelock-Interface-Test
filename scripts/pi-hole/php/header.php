@@ -1,10 +1,11 @@
 <?php
-/* Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. */
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/
 
     require "scripts/pi-hole/php/auth.php";
     require "scripts/pi-hole/php/password.php";
@@ -158,12 +159,13 @@
     $piholeFTLConf = piholeFTLConfig();
 ?>
 <!doctype html>
-<!-- Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+<!--
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. -->
+*  This file is copyright under the Costa Rica Intellectual Property office.-->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -284,7 +286,7 @@ if($auth) {
                             <li class="user-header">
                                 <img src="img/logo.svg" alt="SafeLock Logo" style="border: 0" width="90" height="90">
                                 <p>
-                                    FireWall and Ad Blocker
+                                    FireWall and AdBlocker
                                     <small>Powered by OpenLock</small>
                                 </p>
                             </li>
@@ -300,14 +302,11 @@ if($auth) {
                                     <div class="col-xs-4 text-center">
                                         <a class="btn-link" href="https://twitter.com/OpenLock20" rel="noopener" target="_blank">Twitter</a>
                                     </div>
-                                    <div id="sessiontimer" class="col-xs-12 text-center">
-                                        <strong>Session is valid for <span id="sessiontimercounter"><?php if($auth && strlen($pwhash) > 0){echo $maxlifetime;}else{echo "0";} ?></span></strong>
-                                    </div>
                                 </div>
                             </li>
                             <!-- Menu Footer -->
                             <li class="user-footer">
-                                <!-- Donate Button -->
+                                <!-- Visit Us Button -->
                                 <div class="text-center">
                                     <a class="btn btn-primary btn-lg donate" href="https://openlocksecurity.com/" rel="noopener" target="_blank">
                                         <i class="fas fa-fw menu-icon fa-donate"></i> Visit Our Website
@@ -327,7 +326,7 @@ if($auth) {
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="img/logo.svg" alt="Pi-hole logo">
+                    <img src="img/logo.svg" alt="SafeLock logo">
                 </div>
                 <div class="pull-left info">
                     <p>Status</p>
@@ -486,7 +485,7 @@ if($auth) {
                   </ul>
                 </li>
                 <!-- Toggle -->
-                <li id="pihole-disable" class="treeview"<?php if ($pistatus == "0") { ?> hidden<?php } ?>>
+                <li id="safelock-disable" class="treeview"<?php if ($pistatus == "0") { ?> hidden<?php } ?>>
                   <a href="#">
                     <i class="fa fa-fw menu-icon fa-stop"></i> <span>Disable&nbsp;&nbsp;&nbsp;<span id="flip-status-disable"></span></span>
                     <span class="pull-right-container">
@@ -495,34 +494,34 @@ if($auth) {
                   </a>
                   <ul class="treeview-menu">
                     <li>
-                        <a href="#" id="pihole-disable-indefinitely">
+                        <a href="#" id="safelock-disable-indefinitely">
                             <i class="fa fa-fw menu-icon fa-infinity"></i> Indefinitely
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="pihole-disable-10s">
+                        <a href="#" id="safelock-disable-10s">
                             <i class="fa fa-fw menu-icon fa-clock"></i> For 10 seconds
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="pihole-disable-30s">
+                        <a href="#" id="safelock-disable-30s">
                             <i class="fa fa-fw menu-icon fa-clock"></i> For 30 seconds
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="pihole-disable-5m">
+                        <a href="#" id="safelock-disable-5m">
                             <i class="fa fa-fw menu-icon fas fa-clock"></i> For 5 minutes
                         </a>
                     </li>
                     <li>
-                      <a href="#" id="pihole-disable-cst" data-toggle="modal" data-target="#customDisableModal">
+                      <a href="#" id="safelock-disable-cst" data-toggle="modal" data-target="#customDisableModal">
                             <i class="fa fa-fw menu-icon fa-user-clock"></i> Custom time
                       </a>
                     </li>
                   </ul>
                     <!-- <a href="#" id="flip-status"><i class="fa fa-stop"></i> <span>Disable</span></a> -->
                 </li>
-                <li id="pihole-enable" class="treeview"<?php if (!in_array($pistatus,["0","-1","-2"])) { ?> hidden<?php } ?>>
+                <li id="safelock-enable" class="treeview"<?php if (!in_array($pistatus,["0","-1","-2"])) { ?> hidden<?php } ?>>
                     <a href="#">
                       <i class="fa fa-fw menu-icon fa-play"></i>
                       <span id="enableLabel">Enable&nbsp;&nbsp;&nbsp;
@@ -540,7 +539,7 @@ if($auth) {
                     </span>
                   </a>
                   <ul class="treeview-menu">
-                    <!-- Pi-hole diagnosis -->
+                    <!-- SafeLock diagnosis -->
                     <li<?php if($scriptname === "messages.php"){ ?> class="active"<?php } ?>>
                         <a href="messages.php">
                             <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> SafeLock diagnosis
