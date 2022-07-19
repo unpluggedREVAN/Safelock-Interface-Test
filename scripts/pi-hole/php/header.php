@@ -543,7 +543,7 @@ if($auth) {
                     <!-- Pi-hole diagnosis -->
                     <li<?php if($scriptname === "messages.php"){ ?> class="active"<?php } ?>>
                         <a href="messages.php">
-                            <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> Pi-hole diagnosis
+                            <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> SafeLock diagnosis
                             <span class="pull-right-container warning-count hidden"></span>
                         </a>
                     </li>
@@ -659,18 +659,6 @@ if($auth) {
                     </a>
                 </li>
                 <?php } ?>
-                <!-- Donate -->
-                <li>
-                    <a href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
-                        <i class="fas fa-fw menu-icon fa-donate"></i> <span>Donate</span>
-                    </a>
-                </li>
-                 <!-- Docs -->
-                 <li>
-                    <a href="https://docs.pi-hole.net/" rel="noopener" target="_blank">
-                        <i class="fa fa-fw menu-icon fa-question-circle"></i> <span>Documentation</span>
-                    </a>
-                </li>
             </ul>
         </section>
         <!-- /.sidebar -->
