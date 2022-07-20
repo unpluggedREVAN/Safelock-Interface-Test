@@ -1,10 +1,11 @@
 <?php
-/*   Pi-hole: A black hole for Internet advertisements
-*    (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*    Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*    This file is copyright under the latest version of the EUPL.
-*    Please see LICENSE file for your rights under this license. */
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/
 
 $indexpage = true;
 require "scripts/pi-hole/php/header.php";
@@ -89,12 +90,6 @@ require_once "scripts/pi-hole/php/gravity.php";
       </div>
     </div>
 </div>
-<?php
-  // If the user is logged in, then we show the more detailed index page.
-  // Even if we would include them here anyhow, there would be nothing to
-  // show since the API will respect the privacy of the user if he defines
-  // a password
-  if($auth){ ?>
 
 <div class="row">
     <div class="col-md-12">
@@ -114,6 +109,13 @@ require_once "scripts/pi-hole/php/gravity.php";
       </div>
     </div>
 </div>
+
+<?php
+  // If the user is logged in, then we show the more detailed index page.
+  // Even if we would include them here anyhow, there would be nothing to
+  // show since the API will respect the privacy of the user if he defines
+  // a password
+  if($auth){ ?>
 
 <div class="row">
     <div class="col-md-6">
