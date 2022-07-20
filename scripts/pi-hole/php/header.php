@@ -1,10 +1,11 @@
 <?php
-/* Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. */
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/
 
     require "scripts/pi-hole/php/auth.php";
     require "scripts/pi-hole/php/password.php";
@@ -158,12 +159,13 @@
     $piholeFTLConf = piholeFTLConfig();
 ?>
 <!doctype html>
-<!-- Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+<!--
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. -->
+*  This file is copyright under the Costa Rica Intellectual Property office.-->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -174,7 +176,7 @@
     <meta http-equiv="cache-control" content="max-age=60,private">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pi-hole<?php echo $hostname ? " - " . $hostname : "" ?></title>
+    <title>OpenLock <?php echo $hostname ? " - " . $hostname : "" ?></title>
 
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -255,9 +257,9 @@ if($auth) {
         <!-- Logo -->
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">S<strong>L</strong></span>
+            <span class="logo-mini"><strong>SL</strong></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Safe<strong>lock</strong></span>
+            <span class="logo-lg"><strong>SafeLock</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -271,47 +273,43 @@ if($auth) {
                 <ul class="nav navbar-nav">
                     <li<?php echo !$hostname ? ' class="hidden"' : "" ?>>
                         <p class="navbar-text">
-                            <span class="hidden-xs hidden-sm">hostname: Safelock</span>
-                            <!-- <code> </code> -->
+                            <span class="hidden-xs hidden-sm">hostname: safelock</span>
                         </p>
                     </li>
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                            <img src="img/logo.svg" class="user-image" alt="Pi-hole logo" style="border-radius: 0" width="25" height="25">
-                            <span class="hidden-xs">Safelock</span>
+                            <img src="img/logo.svg" class="user-image" alt="SafeLock logo" style="border-radius: 0" width="25" height="25">
+                            <span class="hidden-xs">SafeLock</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="img/logo.svg" alt="Pi-hole Logo" style="border: 0" width="90" height="90">
+                                <img src="img/logo.svg" alt="SafeLock Logo" style="border: 0" width="90" height="90">
                                 <p>
-                                    Open Source Ad Blocker
-                                    <small>Designed For Raspberry Pi</small>
+                                    FireWall and AdBlocker
+                                    <small>Powered by OpenLock</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->
                             <li class="user-body">
                                 <div class="row">
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://github.com/pi-hole" rel="noopener" target="_blank">GitHub</a>
+                                        <a class="btn-link" href="https://www.facebook.com/OpenLock20" rel="noopener" target="_blank">Facebook</a>
                                     </div>
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://pi-hole.net/" rel="noopener" target="_blank">Website</a>
+                                        <a class="btn-link" href="https://www.instagram.com/openlock20/" rel="noopener" target="_blank">Instagram</a>
                                     </div>
                                     <div class="col-xs-4 text-center">
-                                        <a class="btn-link" href="https://github.com/pi-hole/pi-hole/releases" rel="noopener" target="_blank">Updates</a>
-                                    </div>
-                                    <div id="sessiontimer" class="col-xs-12 text-center">
-                                        <strong>Session is valid for <span id="sessiontimercounter"><?php if($auth && strlen($pwhash) > 0){echo $maxlifetime;}else{echo "0";} ?></span></strong>
+                                        <a class="btn-link" href="https://twitter.com/OpenLock20" rel="noopener" target="_blank">Twitter</a>
                                     </div>
                                 </div>
                             </li>
                             <!-- Menu Footer -->
                             <li class="user-footer">
-                                <!-- Donate Button -->
+                                <!-- Visit Us Button -->
                                 <div class="text-center">
-                                    <a class="btn btn-primary btn-lg donate" href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
-                                        <i class="fas fa-fw menu-icon fa-donate"></i> Donate
+                                    <a class="btn btn-primary btn-lg donate" href="https://openlocksecurity.com/" rel="noopener" target="_blank">
+                                        <i class="fas fa-fw menu-icon fa-donate"></i> Visit Our Website
                                     </a>
                                 </div>
                             </li>
@@ -328,7 +326,7 @@ if($auth) {
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="img/logo.svg" alt="Pi-hole logo">
+                    <img src="img/logo.svg" alt="SafeLock logo">
                 </div>
                 <div class="pull-left info">
                     <p>Status</p>
@@ -487,7 +485,7 @@ if($auth) {
                   </ul>
                 </li>
                 <!-- Toggle -->
-                <li id="pihole-disable" class="treeview"<?php if ($pistatus == "0") { ?> hidden<?php } ?>>
+                <li id="safelock-disable" class="treeview"<?php if ($pistatus == "0") { ?> hidden<?php } ?>>
                   <a href="#">
                     <i class="fa fa-fw menu-icon fa-stop"></i> <span>Disable&nbsp;&nbsp;&nbsp;<span id="flip-status-disable"></span></span>
                     <span class="pull-right-container">
@@ -496,34 +494,34 @@ if($auth) {
                   </a>
                   <ul class="treeview-menu">
                     <li>
-                        <a href="#" id="pihole-disable-indefinitely">
+                        <a href="#" id="safelock-disable-indefinitely">
                             <i class="fa fa-fw menu-icon fa-infinity"></i> Indefinitely
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="pihole-disable-10s">
+                        <a href="#" id="safelock-disable-10s">
                             <i class="fa fa-fw menu-icon fa-clock"></i> For 10 seconds
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="pihole-disable-30s">
+                        <a href="#" id="safelock-disable-30s">
                             <i class="fa fa-fw menu-icon fa-clock"></i> For 30 seconds
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="pihole-disable-5m">
+                        <a href="#" id="safelock-disable-5m">
                             <i class="fa fa-fw menu-icon fas fa-clock"></i> For 5 minutes
                         </a>
                     </li>
                     <li>
-                      <a href="#" id="pihole-disable-cst" data-toggle="modal" data-target="#customDisableModal">
+                      <a href="#" id="safelock-disable-cst" data-toggle="modal" data-target="#customDisableModal">
                             <i class="fa fa-fw menu-icon fa-user-clock"></i> Custom time
                       </a>
                     </li>
                   </ul>
                     <!-- <a href="#" id="flip-status"><i class="fa fa-stop"></i> <span>Disable</span></a> -->
                 </li>
-                <li id="pihole-enable" class="treeview"<?php if (!in_array($pistatus,["0","-1","-2"])) { ?> hidden<?php } ?>>
+                <li id="safelock-enable" class="treeview"<?php if (!in_array($pistatus,["0","-1","-2"])) { ?> hidden<?php } ?>>
                     <a href="#">
                       <i class="fa fa-fw menu-icon fa-play"></i>
                       <span id="enableLabel">Enable&nbsp;&nbsp;&nbsp;
@@ -541,10 +539,10 @@ if($auth) {
                     </span>
                   </a>
                   <ul class="treeview-menu">
-                    <!-- Pi-hole diagnosis -->
+                    <!-- SafeLock diagnosis -->
                     <li<?php if($scriptname === "messages.php"){ ?> class="active"<?php } ?>>
                         <a href="messages.php">
-                            <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> Pi-hole diagnosis
+                            <i class="fa fa-fw menu-icon fa-file-medical-alt"></i> SafeLock diagnosis
                             <span class="pull-right-container warning-count hidden"></span>
                         </a>
                     </li>
@@ -569,7 +567,7 @@ if($auth) {
                     <!-- Tail pihole.log -->
                     <li<?php if($scriptname === "taillog.php"){ ?> class="active"<?php } ?>>
                         <a href="taillog.php">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0" width="200" height="200" viewBox="0 0 200 200" class="svg-inline--fa custom-menu-icon fa-w-20 fa-fw menu-icon">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" preserveAspectRatio="xMidYMid meet" height="14" viewBox="0 0 200 200" class="svg-inline--fa custom-menu-icon fa-w-20 fa-fw menu-icon">
                                 <g>
                                     <linearGradient id="svg_1_1_" gradientUnits="userSpaceOnUse" x1="-317.0903" y1="393.5137" x2="-316.0898" y2="393.5137" gradientTransform="matrix(94.8803 0 0 -56.7359 30129.9492 22362.8691)">
                                         <stop offset="0.051" style="stop-color:currentColor;stop-opacity:0.6"/>
@@ -585,17 +583,17 @@ if($auth) {
                             Tail pihole.log
                         </a>
                     </li>
-                    <!-- Tail pihole-FTL.log -->
+                    <!-- Tail FTL.log -->
                     <li<?php if($scriptname === "taillog-FTL.php"){ ?> class="active"<?php } ?>>
                         <a href="taillog-FTL.php">
-                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="400" height="340" viewBox="0 0 400 340" class="svg-inline--fa custom-menu-icon fa-w-20 fa-fw menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" preserveAspectRatio="xMidYMid meet" height="14" viewBox="0 0 400 340" class="svg-inline--fa custom-menu-icon fa-w-20 fa-fw menu-icon">
                                 <g fill="currentColor">
                                     <path opacity=".6" d="M42.315 11h111.078l-7.381 31.378H34.898L42.315 11z"/>
                                     <path d="M237.368 42.207q-13.098 62.242-26.23 124.486h-37.354q13.135-62.244 26.23-124.486h-39.652l7.381-31.174h132.055l-7.639 31.174h-54.791zm87.03 94.016L351.124 11h-37.18q-16.584 77.846-33.199 155.693h103.356v-30.47h-59.703zM32.428 67.509l-22.316 99.184h31.807l16.068-67.908h59.41l7.381-31.326-92.35.05z"/>
                                     <path opacity=".6" d="M10 186.2a283.868 283.868 0 0 1 42.976-2.992c26.697 0 44.014 4.806 57.58 15.023 14.604 10.853 23.782 28.17 23.782 52.991 0 26.914-9.798 45.487-23.364 56.96-14.806 12.31-37.348 18.154-64.882 18.154A276.442 276.442 0 0 1 10 324.29V186.2zm31.922 114.726a57.564 57.564 0 0 0 11.054.636c28.79.201 47.564-15.659 47.564-49.24.217-29.208-16.899-44.65-44.231-44.65a66.665 66.665 0 0 0-14.387 1.241v92.013zm113.283 24.015V184.325h37.209l29.146 51.595a408.098 408.098 0 0 1 22.945 48.06h.62a523.847 523.847 0 0 1-2.697-58.618v-41.037h29.208V324.94h-33.394l-30.046-54.262a523.459 523.459 0 0 1-24.402-49.611l-.62.201c.821 18.605 1.24 38.402 1.24 61.348v42.355l-29.209-.03zm145.004-32.759a81.099 81.099 0 0 0 35.27 8.76c14.605 0 22.326-6.047 22.326-15.225 0-8.76-6.682-13.767-23.581-19.829-23.364-8.123-38.604-21.069-38.604-41.518 0-23.984 20.03-42.355 53.208-42.355a86.246 86.246 0 0 1 35.89 7.1l-7.1 25.658a66.804 66.804 0 0 0-29.456-6.666c-13.783 0-20.45 6.201-20.45 13.55 0 8.976 7.923 12.945 26.077 19.829 24.806 9.178 36.511 22.108 36.511 41.937 0 23.58-18.155 43.611-56.743 43.611-16.077 0-31.921-4.186-39.86-8.558l6.512-26.294z"/>
                                 </g>
                             </svg>
-                            Tail pihole-FTL.log
+                            Tail FTL.log
                         </a>
                     </li>
                     <!-- Generate debug log -->
@@ -660,18 +658,6 @@ if($auth) {
                     </a>
                 </li>
                 <?php } ?>
-                <!-- Donate -->
-                <li>
-                    <a href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
-                        <i class="fas fa-fw menu-icon fa-donate"></i> <span>Donate</span>
-                    </a>
-                </li>
-                 <!-- Docs -->
-                 <li>
-                    <a href="https://docs.pi-hole.net/" rel="noopener" target="_blank">
-                        <i class="fa fa-fw menu-icon fa-question-circle"></i> <span>Documentation</span>
-                    </a>
-                </li>
             </ul>
         </section>
         <!-- /.sidebar -->

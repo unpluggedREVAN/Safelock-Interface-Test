@@ -1,10 +1,11 @@
 <?php
-/* Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. */ ?>
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/ ?>
 
         </section>
         <!-- /.content -->
@@ -32,7 +33,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" id="pihole-disable-custom" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" id="safelock-disable-custom" class="btn btn-primary" data-dismiss="modal">Submit</button>
                 </div>
             </div>
         </div>
@@ -65,7 +66,7 @@
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://pi-hole.net/donate/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
+                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Visit Us.</a></strong> Powered by OpenLock.
             </div>
         </div>
 
@@ -74,9 +75,9 @@
                 <?php if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?>
                 <ul class="list-unstyled">
                     <?php if($dockerTag) { ?> <li><strong>Docker Tag</strong> <?php echo $dockerTag; ?></li> <?php } ?>
-                    <li><strong>Pi-hole</strong> <?php echo $coreVersionStr; ?></li>
-                    <li><strong>FTL</strong> <?php echo $ftlVersionStr; ?></li>
-                    <li><strong>Web Interface</strong> <?php echo $webVersionStr; ?></li>
+                    <li><strong>SafeLock v.1.0</strong></li>
+                    <li><strong>FireWall and Ad Blocker</strong> </li>
+                    <li><strong>Web Interface v.1.0</strong> </li>
                 </ul>
                 <?php } else { ?>
                 <ul class="list-inline">
@@ -87,7 +88,7 @@
                     </li>
                     <?php } ?>
                     <li>
-                        <strong>Pi-hole</strong>
+                        <strong>SafeLock</strong>
                         <a href="<?php echo $coreReleasesUrl . "/" . $core_current; ?>" rel="noopener" target="_blank"><?php echo $core_current; ?></a>
                         <?php if ($core_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $coreReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
@@ -102,13 +103,6 @@
                         <?php if ($web_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $webReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
                 </ul>
-                <?php if($core_update || $web_update || $FTL_update) { ?>
-                <?php if($dockerTag) { ?>
-                    <p>To install updates, <a href="https://github.com/pi-hole/docker-pi-hole#upgrading--reconfiguring" rel="noopener" target="_blank">replace this old container with a fresh upgraded image</a>.</p>
-                <?php } else { ?>
-                    <p>To install updates, run <code><a href="https://docs.pi-hole.net/main/update/" rel="noopener" target="_blank">pihole -up</a></code>.</p>
-                <?php } ?>
-                <?php } ?>
                 <?php } ?>
             </div>
         </div>
