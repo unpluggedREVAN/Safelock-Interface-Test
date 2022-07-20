@@ -1,10 +1,11 @@
 <?php
-/* Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock®: Firewall and AdBlocker
+*   Powered by OpenLock®
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. */ ?>
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/ ?>
 
         </section>
         <!-- /.content -->
@@ -32,7 +33,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" id="pihole-disable-custom" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" id="safelock-disable-custom" class="btn btn-primary" data-dismiss="modal">Submit</button>
                 </div>
             </div>
         </div>
@@ -87,7 +88,7 @@
                     </li>
                     <?php } ?>
                     <li>
-                        <strong>Pi-hole</strong>
+                        <strong>SafeLock</strong>
                         <a href="<?php echo $coreReleasesUrl . "/" . $core_current; ?>" rel="noopener" target="_blank"><?php echo $core_current; ?></a>
                         <?php if ($core_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $coreReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
@@ -102,13 +103,6 @@
                         <?php if ($web_update) { ?> &middot; <a class="lookatme" lookatme-text="Update available!" href="<?php echo $webReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
                 </ul>
-                <?php if($core_update || $web_update || $FTL_update) { ?>
-                <?php if($dockerTag) { ?>
-                    <p>To install updates, <a href="https://github.com/pi-hole/docker-pi-hole#upgrading--reconfiguring" rel="noopener" target="_blank">replace this old container with a fresh upgraded image</a>.</p>
-                <?php } else { ?>
-                    <p>To install updates, run <code><a href="https://docs.pi-hole.net/main/update/" rel="noopener" target="_blank">pihole -up</a></code>.</p>
-                <?php } ?>
-                <?php } ?>
                 <?php } ?>
             </div>
         </div>
