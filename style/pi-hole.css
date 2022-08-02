@@ -738,13 +738,13 @@ li:not(.menu-open) .treeview-menu .warning-count {
 
 /*** Donate button - navbar ***/
 .main-header .navbar-custom-menu .user-footer .donate {
-  margin: 15px;
+  margin: 13px;
   padding: 0.8em 1em;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
   color: #fff;
-  background: #96060c;
+  background: #563d7c;
   border: none;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 
 .main-header .navbar-custom-menu .user-footer .donate:hover,

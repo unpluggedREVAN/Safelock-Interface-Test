@@ -1,20 +1,21 @@
 <?php
-/* Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock: Firewall and AdBlocker
+*   Powered by OpenLock
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. */ ?>
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/ ?>
 
 <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="float:none">
   <div class="panel panel-default">
     <div class="panel-heading">
       <div class="text-center">
-        <img src="img/logo.svg" alt="Pi-hole logo" class="loginpage-logo">
+        <img src="img/logo.svg" alt="SafeLock logo" class="loginpage-logo">
       </div>
       <br>
 
-      <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;">Pi-<b>hole</b></span></div>
+      <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;"><b>SafeLock</b></span></div>
       <p class="login-box-msg">Sign in to start your session</p>
       <div id="cookieInfo" class="panel-title text-center text-red" style="font-size: 150%" hidden>Verify that cookies are allowed for <code><?php echo $_SERVER['HTTP_HOST']; ?></code></div>
       <?php if ($wrongpassword) { ?>
@@ -56,11 +57,8 @@
               </div>
               <div class="box-body">
                 <p>
-                  After installing Pi-hole for the first time, a password is generated and displayed to the user. The
-                  password cannot be retrieved later on, but it is possible to set a new password (or explicitly disable
-                  the password by setting an empty password) using the command
+                  After installing SafeLock for the first time, a password is generated and displayed to the user.
                 </p>
-                <pre>sudo pihole -a -p</pre>
               </div>
             </div>
           </div>

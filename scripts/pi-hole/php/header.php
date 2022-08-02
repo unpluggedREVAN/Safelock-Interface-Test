@@ -1,7 +1,7 @@
 <?php
 /*
-*	SafeLock®: Firewall and AdBlocker
-*   Powered by OpenLock®
+*	SafeLock: Firewall and AdBlocker
+*   Powered by OpenLock
 *   https://openlocksecurity.com/
 *
 *  This file is copyright under the Costa Rica Intellectual Property office.
