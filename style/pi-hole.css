@@ -6,6 +6,13 @@
 *  This file is copyright under the Costa Rica Intellectual Property office.
 */
 
+.bodyUserC{
+  background-color: #272c30;
+  padding: 10px;
+
+}
+
+
 .layout-boxed {
   background: url("../img/boxed-bg.png") repeat fixed;
 }
