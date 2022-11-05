@@ -160,8 +160,8 @@
 ?>
 <!doctype html>
 <!--
-*	SafeLock®: Firewall and AdBlocker
-*   Powered by OpenLock®
+*	SafeLockï¿½: Firewall and AdBlocker
+*   Powered by OpenLockï¿½
 *   https://openlocksecurity.com/
 *
 *  This file is copyright under the Costa Rica Intellectual Property office.-->
@@ -404,20 +404,20 @@ if($auth) {
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header text-uppercase">Main navigation</li>
                 <!-- Home Page -->
-                <li<?php if($scriptname === "index.php"){ ?> class="active"<?php } ?>>
+                <li<?php if($scriptname === "index.php"){ ?> class="active" <?php } ?>>
                     <a href="index.php">
                         <i class="fa fa-fw menu-icon fa-home"></i> <span>Dashboard</span>
                     </a>
                 </li>
 				<!-- User Configuration -->
-                <li<?php if($scriptname === "userconfig.php"){ ?> class="active"<?php } ?>>
+                <li<?php if($scriptname === "userconfig.php"){ ?> class="active" echo  print("entra al if"); <?php } ?>>
                     <a href="userconfig.php">
                         <i class="fa fa-fw menu-icon fa-home"></i> <span>User Configuration</span>
                     </a>
                 </li>
                 <?php if($auth){ ?>
                 <!-- Query Log -->
-                <li<?php if($scriptname === "queries.php"){ ?> class="active"<?php } ?>>
+                <li<?php if($scriptname === "queries.php"){ ?> class="active"  print("entra al if"); <?php } ?>>
                     <a href="queries.php">
                         <i class="fa fa-fw menu-icon fa-file-alt"></i> <span>Query Log</span>
                     </a>

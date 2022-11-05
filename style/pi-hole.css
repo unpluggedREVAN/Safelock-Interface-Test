@@ -743,19 +743,10 @@ li:not(.menu-open) .treeview-menu .warning-count {
   padding: 0.8em 1em;
   width: calc(100% - 20px);
   color: #fff;
-  background: #563d7c;
+  background: #3c8dbc;
   border: none;
   border-radius: 7px;
 }
-/*
-.main-header .navbar-custom-menu .user-footer .donate:hover,
-.main-header .navbar-custom-menu .user-footer .donate:active,
-.main-header .navbar-custom-menu .user-footer .donate:active:hover,
-.main-header .navbar-custom-menu .user-footer .donate:focus,
-.main-header .navbar-custom-menu .user-footer .donate:active:focus {
-  background: #f60d1a;
-}
-*/
 
 .navbar-custom-menu > .navbar-nav > li:nth-child(1) {
   padding: 0 10px 0 0;
