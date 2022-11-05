@@ -13,17 +13,17 @@
     
   <div class="bodyUserC">
     <form name="messageControl" id="messageControl" action="userconfig.php" >
-      Control de Mensajería: <select name="subject" id="subject">
-          <option value="7" selected="selected">7 días</option>
-          <option value="15" selected="selected">15 días</option>
-          <option value="21" selected="selected">21 días</option>
-          <option value="30" selected="selected">30 días</option>
-          <option value="60" selected="selected">60 días</option>
-          <option value="90" selected="selected">90 días</option>
-          <option value="180" selected="selected">180 días</option>
+      Time for Message Control: <select name="subject" id="subject">
+          <option value="7" selected="selected">7 days</option>
+          <option value="15" selected="selected">15 days</option>
+          <option value="21" selected="selected">21 days</option>
+          <option value="30" selected="selected">30 days</option>
+          <option value="60" selected="selected">60 days</option>
+          <option value="90" selected="selected">90 days</option>
+          <option value="180" selected="selected">180 days</option>
       </select>
       <br> 
-      <input type="submit" value = "Confirmar">
+      <input type="submit" value = "Submit">
       </form>
   </div>
 
@@ -31,16 +31,16 @@
 
   <div class="bodyUserC">
     <form name = "changeIPuc" id = "changeIPuc">
-      <label for="newIP">Cambiar IP a:</label><br>
+      <label for="newIP">Change IP direction to:</label><br>
       <input type="text" id ="newIP" name = "newIP"><br> 
-      <input type="submit" value = "Confirmar">
+      <input type="submit" value = "Submit">
     </form>
   </div>
 
   <br>
 
   <div class="bodyUserC">
-    <h1> Control Parental </h1>
+    <h1> Parental Control </h1>
     <button id="parentalControl"> Enabled</button> 
 </div>
 
@@ -48,13 +48,13 @@
 
   <div class="bodyUserC">
     <form name = "changeTheme" id = "changeTheme">
-    <h2>Cambiar Tema</h2>
+    <h2>Change Theme</h2>
         <input type="radio" id="default" name="changeTheme" value="default">
         <label for="default">Default</label><br>
-        <input type="radio" id="modoClaro" name="changeTheme" value="modoClaro">
-        <label for="modoClaro">Modo Claro</label><br>
-        <input type="radio" id="modoOscuro" name="changeTheme" value="modoOscuro">
-        <label for="modoOscuro">Modo Oscuro</label>
+        <input type="radio" id="lightMode" name="changeTheme" value="lightMode">
+        <label for="lightMode">Light Mode</label><br>
+        <input type="radio" id="darkMode" name="changeTheme" value="darkMode">
+        <label for="darkMode">Dark Mode</label>
     </form>
   </div>
 
@@ -62,13 +62,13 @@
 
   <div class="bodyUserC">
     <form name = "changeBackGround" id = "changeBackGround">
-    <h2>Cambiar Fondo</h2>
+    <h2>Change BackGround</h2>
         <input type="radio" id="logos" name="changeBackGround" value="logos">
         <label for="Logos">Logos</label><br>
         <input type="radio" id="cuadrosR" name="changeBackGround" value="cuadrosR">
-        <label for="cuadrosR">Cuadros</label><br>
+        <label for="cuadrosR">Squares</label><br>
         <input type="radio" id="cuadrosDel" name="changeBackGround" value="cuadrosDel">
-        <label for="cuadrosDel">Cuadros Delineados</label>
+        <label for="cuadrosDel">Squares and Lines</label>
     </form>
   </div>
 
@@ -76,7 +76,7 @@
 
   <div class="bodyUserC">
     <form name = "ChangeTemper" id = "ChangeTemper">
-    <h2>Cambiar Unidad de Temperatura</h2>
+    <h2>Change Temperature Unity</h2>
         <input type="radio" id="celc" name="ChangeTemper" value="celc">
         <label for="celc">Celcious</label><br>
         <input type="radio" id="farh" name="ChangeTemper" value="farh">
