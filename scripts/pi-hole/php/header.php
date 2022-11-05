@@ -410,7 +410,7 @@ if($auth) {
                     </a>
                 </li>
 				<!-- User Configuration -->
-                <li<?php if(!$scriptname != "userconfig.php"){ ?> class="active" <?php } ?>>
+                <li<?php if($scriptname === "userconfig.php"){ ?> class="active" <?php } ?>>
                     <a href="userconfig.php">
                         <i class="fa fa-fw menu-icon fa-home"></i> <span>User Configuration</span>
                     </a>
