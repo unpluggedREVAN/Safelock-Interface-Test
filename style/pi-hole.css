@@ -16,9 +16,9 @@
   background-color: #272c30;
   padding: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
+  font-size: 10px !important;
   font-style: normal;
-  color: #ffffff;
+  color: #627d8e;
 
 }
 
