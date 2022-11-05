@@ -22,9 +22,13 @@
 
 }
 
-.bodyUserC form{
+.bodyUserC form [name="messageControl"]{
   font-size: 10px;
 
+}
+
+#parentalControl{
+  background-color: #272c30;
 }
 
 .layout-boxed {
