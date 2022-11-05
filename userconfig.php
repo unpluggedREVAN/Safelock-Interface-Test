@@ -27,6 +27,8 @@
       </form>
   </div>
 
+  <br>
+
   <div class="bodyUserC">
     <form name = "changeIPuc" id = "changeIPuc">
       <label for="newIP">Cambiar IP a:</label><br><br>
@@ -35,10 +37,14 @@
     </form>
   </div>
 
+  <br>
+
   <div class="bodyUserC">
     <h1> Control Parental </h1>
     <label id="parentalControl" class = "label.btn.btn-success.btn-sm.toggle-on"> Enabled</label> 
-  <div>
+</div>
+
+  <br>
 
   <div class="bodyUserC">
     <form name = "changeTheme" id = "changeTheme">
@@ -52,6 +58,8 @@
     </form>
   </div>
 
+  <br>
+
   <div class="bodyUserC">
     <form name = "changeBackGround" id = "changeBackGround">
     <h2>Cambiar Fondo</h2>
@@ -64,6 +72,8 @@
     </form>
   </div>
 
+  <br>
+
   <div class="bodyUserC">
     <form name = "ChangeTemper" id = "ChangeTemper">
     <h2>Cambiar Unidad de Temperatura</h2>
@@ -73,6 +83,9 @@
         <label for="farh">Farenheit</label><br>
     </form>
   </div>
+  
+  <br>
+
 </div>
 
 
