@@ -1,9 +1,10 @@
-/* Pi-hole: A black hole for Internet advertisements
-*  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+/*
+*	SafeLock: Firewall and AdBlocker
+*   Powered by OpenLock
+*   https://openlocksecurity.com/
 *
-*  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. */
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/
 
 .layout-boxed {
   background: url("../img/boxed-bg.png") repeat fixed;
@@ -746,7 +747,7 @@ li:not(.menu-open) .treeview-menu .warning-count {
   border: none;
   border-radius: 7px;
 }
-
+/*
 .main-header .navbar-custom-menu .user-footer .donate:hover,
 .main-header .navbar-custom-menu .user-footer .donate:active,
 .main-header .navbar-custom-menu .user-footer .donate:active:hover,
@@ -754,6 +755,7 @@ li:not(.menu-open) .treeview-menu .warning-count {
 .main-header .navbar-custom-menu .user-footer .donate:active:focus {
   background: #f60d1a;
 }
+*/
 
 .navbar-custom-menu > .navbar-nav > li:nth-child(1) {
   padding: 0 10px 0 0;
