@@ -12,7 +12,7 @@
 <div id="principalUC">
     
   <div class="bodyUserC">
-    <form name="messageControl" id="messageControl" action="userconfig.php">
+    <form name="messageControl" id="messageControl" action="userconfig.php" >
       Control de Mensajería: <select name="subject" id="subject">
           <option value="7" selected="selected">7 días</option>
           <option value="15" selected="selected">15 días</option>

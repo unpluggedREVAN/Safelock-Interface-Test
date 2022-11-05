@@ -16,12 +16,16 @@
   background-color: #272c30;
   padding: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px !important;
+  font-size: 10px;
   font-style: normal;
-  color: #627d8e;
+  color: #b3bac0;
 
 }
 
+.bodyUserC form{
+  font-size: 10px;
+
+}
 
 .layout-boxed {
   background: url("../img/boxed-bg.png") repeat fixed;
