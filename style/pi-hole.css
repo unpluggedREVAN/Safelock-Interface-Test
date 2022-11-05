@@ -13,11 +13,12 @@
 }
 
 .bodyUserC{
-  color: #272c30;
+  background-color: #272c30;
   padding: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-style: normal;
+  text-decoration-color: #ffffff;
 
 }
 
