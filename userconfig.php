@@ -31,8 +31,8 @@
 
   <div class="bodyUserC">
     <form name = "changeIPuc" id = "changeIPuc">
-      <label for="newIP">Cambiar IP a:</label><br><br>
-      <input type="text" id ="newIP" name = "newIP"><br><br> 
+      <label for="newIP">Cambiar IP a:</label><br>
+      <input type="text" id ="newIP" name = "newIP"><br> 
       <input type="submit" value = "Confirmar">
     </form>
   </div>
@@ -41,7 +41,7 @@
 
   <div class="bodyUserC">
     <h1> Control Parental </h1>
-    <label id="parentalControl" class = "label.btn.btn-success.btn-sm.toggle-on"> Enabled</label> 
+    <button id="parentalControl"> Enabled</button> 
 </div>
 
   <br>
@@ -83,7 +83,7 @@
         <label for="farh">Farenheit</label><br>
     </form>
   </div>
-  
+
   <br>
 
 </div>

@@ -15,7 +15,12 @@
 .bodyUserC{
   background-color: #272c30;
   padding: 10px;
-
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  opacity: 0;
+  font-style: normal; 
+  top: 150.3px; 
+  left: 811.3px;
 }
 
 
