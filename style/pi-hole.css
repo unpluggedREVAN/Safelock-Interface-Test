@@ -22,9 +22,8 @@
 
 }
 
-.bodyUserC form [name="messageControl"]{
+#messageControl, #changeIPuc{
   font-size: 10px;
-
 }
 
 #parentalControl{
