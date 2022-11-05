@@ -309,7 +309,7 @@ if($auth) {
                                 <!-- Visit Us Button -->
                                 <div class="text-center">
                                     <a class="btn btn-primary btn-lg donate" href="https://openlocksecurity.com/" rel="noopener" target="_blank">
-                                        <i class="fas fa-fw menu-icon fa-donate"></i> Visit Our Website
+                                        <!-- <i class="fas fa-fw menu-icon fa-donate"></i> --> Visit Our Website
                                     </a>
                                 </div>
                             </li>
@@ -412,7 +412,7 @@ if($auth) {
 				<!-- User Configuration -->
                 <li<?php if($scriptname === "userconfig.php"){ ?> class="active" <?php } ?>>
                     <a href="userconfig.php">
-                        <i class="fa fa-fw menu-icon fa-home"></i> <span>User Configuration</span>
+                       <!-- <i class="fa fa-fw menu-icon fa-home"></i> --> <span>User Configuration</span>
                     </a>
                 </li>
                 <?php if($auth){ ?>
