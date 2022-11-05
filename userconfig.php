@@ -10,7 +10,7 @@
 ?>
 
 
-<div>
+<div class="box-header with-border">
   <form name="messageControl" id="messageControl" action="userconfig.php">
     Control de Mensajería: <select name="subject" id="subject">
         <option value="7" selected="selected">7 días</option>
@@ -26,7 +26,7 @@
     </form>
 </div>
 
-<div>
+<div class="box-header with-border">
   <form name = "changeIPuc" id = "changeIPuc">
     <label for="newIP">Cambiar IP a:</label><br><br>
     <input type="text" id ="newIP" name = "newIP"><br><br> 
@@ -34,12 +34,12 @@
   </form>
 </div>
 
-<div>
+<div class="box-header with-border">
   <h1> Control Parental </h1>
   <label id="parentalControl" class = "label.btn.btn-success.btn-sm.toggle-on"> Enabled</label> 
 <div>
 
-<div>
+<div class="box-header with-border">
   <form name = "changeTheme" id = "changeTheme">
   <h2>Cambiar Tema</h2>
       <input type="radio" id="default" name="changeTheme" value="default">
@@ -51,7 +51,7 @@
   </form>
 </div>
 
-<div>
+<div class="box-header with-border">
   <form name = "changeBackGround" id = "changeBackGround">
   <h2>Cambiar Fondo</h2>
       <input type="radio" id="logos" name="changeBackGround" value="logos">
@@ -63,7 +63,7 @@
   </form>
 </div>
 
-<div>
+<div class="box-header with-border">
   <form name = "ChangeTemper" id = "ChangeTemper">
   <h2>Cambiar Unidad de Temperatura</h2>
       <input type="radio" id="celc" name="ChangeTemper" value="celc">
