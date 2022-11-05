@@ -410,14 +410,14 @@ if($auth) {
                     </a>
                 </li>
 				<!-- User Configuration -->
-                <li<?php if($scriptname === "userconfig.php"){ ?> class="active" echo  "<h1> entra al if </h1>"; <?php } ?>>
+                <li<?php if(!$scriptname != "userconfig.php"){ ?> class="active" <?php } ?>>
                     <a href="userconfig.php">
                         <i class="fa fa-fw menu-icon fa-home"></i> <span>User Configuration</span>
                     </a>
                 </li>
                 <?php if($auth){ ?>
                 <!-- Query Log -->
-                <li<?php if($scriptname === "queries.php"){ ?> class="active"  echo  "<h1> entra al if </h1>"; <?php } ?>>
+                <li<?php if($scriptname === "queries.php"){ ?> class="active" <?php } ?>>
                     <a href="queries.php">
                         <i class="fa fa-fw menu-icon fa-file-alt"></i> <span>Query Log</span>
                     </a>
