@@ -1,9 +1,10 @@
-/* Pi-hole: A black hole for Internet advertisements
- *  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
- *  Network-wide ad blocking via your own hardware.
- *
- *  This file is copyright under the latest version of the EUPL.
- *  Please see LICENSE file for your rights under this license. */
+/*
+*	SafeLock�: Firewall and AdBlocker
+*   Powered by OpenLock�
+*   https://openlocksecurity.com/
+*
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/
 
 /* global utils:false, Chart:false, updateSessionTimer:false */
 

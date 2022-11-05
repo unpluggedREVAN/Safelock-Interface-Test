@@ -1,10 +1,11 @@
-<?php /*
-*    Pi-hole: A black hole for Internet advertisements
-*    (c) 2019 Pi-hole, LLC (https://pi-hole.net)
-*    Network-wide ad blocking via your own hardware.
+<?php 
+/*
+*	SafeLock�: Firewall and AdBlocker
+*   Powered by OpenLock�
+*   https://openlocksecurity.com/
 *
-*    This file is copyright under the latest version of the EUPL.
-*    Please see LICENSE file for your rights under this license. */
+*  This file is copyright under the Costa Rica Intellectual Property office.
+*/
     require "scripts/pi-hole/php/header.php";
 ?>
 
