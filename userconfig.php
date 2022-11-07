@@ -23,6 +23,9 @@
           <option value="180" selected="selected">180 days</option>
       </select>
       <br> 
+      <label for="emailMS">Write your e-mail so we can email you your SafeLock data:</label><br>
+      <input type="text" id ="emailMS" name = "emailMS"><br> 
+      <br>
       <input type="submit" value = "Submit">
       </form>
   </div>
