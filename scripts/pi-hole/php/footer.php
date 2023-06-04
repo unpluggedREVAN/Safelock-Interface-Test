@@ -66,7 +66,7 @@
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Visit Us.</a></strong> Powered by OpenLock.
+                <strong><a href="https://openlocksecurity.com/" rel="noopener" target="_blank"> Visit Us.</a></strong> Powered by OpenLock.
             </div>
         </div>
 

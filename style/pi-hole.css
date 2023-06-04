@@ -1,10 +1,34 @@
 /*
-*	SafeLock�: Firewall and AdBlocker
-*   Powered by OpenLock�
+*	SafeLock: Firewall and AdBlocker
+*   Powered by OpenLock
 *   https://openlocksecurity.com/
 *
 *  This file is copyright under the Costa Rica Intellectual Property office.
 */
+
+#principalUC{
+  color: #353c42;
+  
+
+}
+
+.bodyUserC{
+  background-color: #272c30;
+  padding: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  color: #b3bac0;
+
+}
+
+#messageControl, #changeIPuc{
+  font-size: 10px;
+}
+
+#parentalControl{
+  background-color: #272c30;
+}
 
 .layout-boxed {
   background: url("../img/prueba1.png") repeat fixed;
@@ -743,17 +767,9 @@ li:not(.menu-open) .treeview-menu .warning-count {
   padding: 0.8em 1em;
   width: calc(100% - 20px);
   color: #fff;
-  background: #563d7c;
+  background: #3c8dbc;
   border: none;
   border-radius: 7px;
-}
-
-.main-header .navbar-custom-menu .user-footer .donate:hover,
-.main-header .navbar-custom-menu .user-footer .donate:active,
-.main-header .navbar-custom-menu .user-footer .donate:active:hover,
-.main-header .navbar-custom-menu .user-footer .donate:focus,
-.main-header .navbar-custom-menu .user-footer .donate:active:focus {
-  background: #f60d1a;
 }
 
 .navbar-custom-menu > .navbar-nav > li:nth-child(1) {

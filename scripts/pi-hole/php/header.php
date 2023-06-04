@@ -160,8 +160,8 @@
 ?>
 <!doctype html>
 <!--
-*	SafeLock®: Firewall and AdBlocker
-*   Powered by OpenLock®
+*	SafeLockï¿½: Firewall and AdBlocker
+*   Powered by OpenLockï¿½
 *   https://openlocksecurity.com/
 *
 *  This file is copyright under the Costa Rica Intellectual Property office.-->
@@ -309,7 +309,7 @@ if($auth) {
                                 <!-- Visit Us Button -->
                                 <div class="text-center">
                                     <a class="btn btn-primary btn-lg donate" href="https://openlocksecurity.com/" rel="noopener" target="_blank">
-                                        <i class="fas fa-fw menu-icon fa-donate"></i> Visit Our Website
+                                        <!-- <i class="fas fa-fw menu-icon fa-donate"></i> --> Visit Our Website
                                     </a>
                                 </div>
                             </li>
@@ -404,20 +404,20 @@ if($auth) {
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header text-uppercase">Main navigation</li>
                 <!-- Home Page -->
-                <li<?php if($scriptname === "index.php"){ ?> class="active"<?php } ?>>
+                <li<?php if($scriptname === "index.php"){ ?> class="active" <?php } ?>>
                     <a href="index.php">
                         <i class="fa fa-fw menu-icon fa-home"></i> <span>Dashboard</span>
                     </a>
                 </li>
 				<!-- User Configuration -->
-                <li<?php if($scriptname === "userconfig.php"){ ?> class="active"<?php } ?>>
+                <li<?php if($scriptname === "userconfig.php"){ ?> class="active" <?php } ?>>
                     <a href="userconfig.php">
-                        <i class="fa fa-fw menu-icon fa-home"></i> <span>User Configuration</span>
+                       <!-- <i class="fa fa-fw menu-icon fa-home"></i> --> <span>User Configuration</span>
                     </a>
                 </li>
                 <?php if($auth){ ?>
                 <!-- Query Log -->
-                <li<?php if($scriptname === "queries.php"){ ?> class="active"<?php } ?>>
+                <li<?php if($scriptname === "queries.php"){ ?> class="active" <?php } ?>>
                     <a href="queries.php">
                         <i class="fa fa-fw menu-icon fa-file-alt"></i> <span>Query Log</span>
                     </a>
